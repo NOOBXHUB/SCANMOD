@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "scan-receiver",
+  "version": "${version}",
+  "name": "Scan Receiver",
+  "description": "Receives the scan:key message from the Scan server plugin and presses that key.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["th.scan.receiver.ScanReceiver"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
